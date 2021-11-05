@@ -129,6 +129,7 @@ def readAndDistinct():
     print(len(newList), len(gotset))
     print(newList[0])
 
+    newList = sorted(newList, key=lambda x : x.updatetime)
 
     csvfn = out_path + "asd"
     cnt = 1
